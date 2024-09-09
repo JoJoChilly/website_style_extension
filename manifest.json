@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "website style customization",
+    "version": "1.0",
+    "description": "自定义指定网站的页面样式",
+    "content_scripts": [
+        {
+            "matches": ["https://sa.shanbay.com:8443/*"],
+            "js": ["content.js"],
+            "css": ["sa.css"]
+        }
+    ],
+    "permissions": ["activeTab"]
+}
